@@ -2,7 +2,7 @@
 
 ## Introduction
 
-OU Grade Retrieval Automation collects an Osmania University examination batch into one Excel workbook. Developed by Baba Gandhi Kandagatla in his first year of engineering, the project received a college letter of appreciation. The author reports use by multiple OU-affiliated colleges.
+In my first year of engineering, I helped build a way to collect a whole batch of Osmania University exam results in one Excel workbook. I received a college letter of appreciation for this work, and multiple OU-affiliated colleges have used the tool.
 
 ## Tech stack
 
@@ -23,7 +23,7 @@ Python, Flask, Requests and Beautiful Soup handle the web workflow. Python threa
 
 ## How it can be improved
 
-Saved, anonymized HTML fixtures would make it possible to test layout changes without contacting the university site. Useful cases include a missing hall ticket, a result with a withheld grade and a page with a reordered subject table.
+I’d save anonymized copies of result pages so I could test the parser whenever the university changes its layout. I’d start with a missing hall ticket, a result with a withheld grade and a page with a reordered subject table.
 
 ## How to run
 
