@@ -4,6 +4,8 @@ OU Grade Retrieval Automation collects a batch of Osmania University exam result
 
 Developed by Baba Gandhi Kandagatla during his first year of engineering, the project received a college letter of appreciation. The author reports use by multiple OU-affiliated colleges.
 
+![Empty result collection form with a result URL, hall-ticket range and CSV upload.](docs/images/result-form.png)
+
 ## From hall-ticket list to workbook
 
 1. Open the Flask form and enter the OU results page for the exam.
@@ -23,3 +25,7 @@ python app.py
 The Flask implementation is in `app.py`, with the collection form in `templates/index.html`. The repository also includes a desktop implementation in `trinetra.py`, which requires PyQt5 separately.
 
 The parser expects the OU result URL pattern and table layout encoded in `app.py`. Changes to the university site can affect extraction. Use authorized hall-ticket lists and check a sample of exported grades against the source before relying on a batch result.
+
+## Improving the parser
+
+Saved, anonymized HTML fixtures would make it possible to test layout changes without contacting the university site. Useful cases include a missing hall ticket, a result with a withheld grade and a page with a reordered subject table.
